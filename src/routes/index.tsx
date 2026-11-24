@@ -6,7 +6,16 @@ import { lowestPrice, machineTotal, money, useFactories } from "@/lib/factories"
 
 export const Route = createFileRoute("/")({
   component: HomePage,
-  head: () => ({ meta: [{ title: "صنع في مصر" }] }),
+  head: () => ({
+    meta: [
+      { title: "صنع في مصر" },
+      {
+        name: "description",
+        content:
+          "مصانع مصر، مصنّفة حسب قسم التصنيع: ملابس، أثاث، أغذية، بلاستيك، معادن وتغليف. شوف القدرة اليومية والسعر، أو ابعث عرضك للمصنع.",
+      },
+    ],
+  }),
 });
 
 const shots = [

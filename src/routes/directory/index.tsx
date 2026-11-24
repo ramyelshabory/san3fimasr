@@ -12,7 +12,15 @@ export const Route = createFileRoute("/directory/")({
     section: typeof search.section === "string" ? search.section : "",
   }),
   component: DirectoryPage,
-  head: () => ({ meta: [{ title: "المصانع — صنع في مصر" }] }),
+  head: () => ({
+    meta: [
+      { title: "المصانع — صنع في مصر" },
+      {
+        name: "description",
+        content: "دور على مصنع في مصر حسب القسم والمنطقة — ملابس، أثاث، أغذية، بلاستيك، معادن وتغليف. شوف القدرة اليومية والسعر، أو ابعث عرضك للمصنع.",
+      },
+    ],
+  }),
 });
 
 function DirectoryPage() {
