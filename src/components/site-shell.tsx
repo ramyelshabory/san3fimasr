@@ -29,9 +29,9 @@ export function SiteShell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen bg-bg text-ink">
       <header className="sticky top-0 z-20 border-b border-line bg-surface/95 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2 sm:py-3">
           <Link to="/" className="flex items-center gap-2">
-            <span className="grid size-10 place-items-center rounded-xl bg-accent font-extrabold text-accent-fg">
+            <span className="grid size-8 place-items-center rounded-xl bg-accent font-extrabold text-accent-fg sm:size-10">
               ص
             </span>
             <span className="font-extrabold">صنع في مصر</span>
@@ -42,14 +42,14 @@ export function SiteShell({ children }: { children: ReactNode }) {
             {access === "admin" ? (
               <Link
                 to="/admin"
-                className="inline-flex h-11 items-center rounded-xl bg-primary px-4 text-sm font-bold text-primary-fg"
+                className="inline-flex h-9 items-center rounded-xl bg-primary px-3 text-sm font-bold text-primary-fg sm:h-11 sm:px-4"
               >
                 لوحة التحكم
               </Link>
             ) : null}
           </div>
         </div>
-        <nav className="mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 pb-3">
+        <nav className="mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 pb-2 sm:pb-3">
           {links.map((link) => {
             const active = link.to === "/" ? pathname === "/" : pathname.startsWith(link.to);
             return (
@@ -58,7 +58,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 to={link.to}
                 search={link.search}
                 className={
-                  "inline-flex h-11 shrink-0 items-center rounded-full px-4 text-sm font-bold " +
+                  "inline-flex h-9 shrink-0 items-center rounded-full px-3 text-sm font-bold sm:h-11 sm:px-4 " +
                   (active ? "bg-primary text-primary-fg" : "border border-line bg-bg")
                 }
               >
