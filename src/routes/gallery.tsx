@@ -3,7 +3,15 @@ import { SiteShell } from "@/components/site-shell";
 
 export const Route = createFileRoute("/gallery")({
   component: GalleryPage,
-  head: () => ({ meta: [{ title: "المعرض — صنع في مصر" }] }),
+  head: () => ({
+    meta: [
+      { title: "المعرض — صنع في مصر" },
+      {
+        name: "description",
+        content: "صور حقيقية من ورش ومصانع صنع في مصر — خطوط الإنتاج، المكن، والمنتجات الجاهزة.",
+      },
+    ],
+  }),
 });
 
 const shots = [

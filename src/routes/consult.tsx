@@ -5,7 +5,15 @@ import { usePlatform } from "@/lib/platform";
 
 export const Route = createFileRoute("/consult")({
   component: ConsultPage,
-  head: () => ({ meta: [{ title: "استشارات — صنع في مصر" }] }),
+  head: () => ({
+    meta: [
+      { title: "استشارات — صنع في مصر" },
+      {
+        name: "description",
+        content: "عندك رأس مال ومش عايز تبني مصنع؟ فريق الاستشارات يقولك تختار إيه، تستهدف مين، تسوّق إزاي، وتحسب الربح.",
+      },
+    ],
+  }),
 });
 
 const steps = [
