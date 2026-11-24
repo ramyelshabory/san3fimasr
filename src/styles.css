@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f3efe6;
+  --color-surface: #fffdf8;
+  --color-ink: #142033;
+  --color-muted: #5e6774;
+  --color-line: #e4dccf;
+  --color-primary: #0e4d6c;
+  --color-primary-fg: #f7f4ee;
+  --color-accent: #c46b2c;
+  --color-accent-fg: #fff8f2;
+  --color-ok: #1f7a4d;
+  --color-ok-bg: #e5f3eb;
+  --color-warn: #8a5a00;
+  --color-warn-bg: #fbf3df;
+  --color-bad: #9b2c2c;
+  --color-bad-bg: #f8e8e6;
+  --color-sidebar: #102033;
+  --color-sidebar-fg: #e7eef5;
+  --color-sidebar-muted: #9aafc2;
+  --font-sans: "Cairo", system-ui, sans-serif;
+  --radius-card: 1.25rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+}
+
+@layer components {
+  .field {
+    width: 100%;
+    height: 2.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-line);
+    background: var(--color-bg);
+    padding-inline: 0.75rem;
+    color: var(--color-ink);
+    outline: none;
+  }
+
+  textarea.field {
+    height: auto;
+    padding-block: 0.75rem;
+  }
+
+  .field:focus {
+    border-color: var(--color-primary);
+  }
+}
