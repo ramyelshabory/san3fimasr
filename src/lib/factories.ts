@@ -44,6 +44,11 @@ export const SECTIONS: Section[] = [
   { id: "plastic", name: "بلاستيك", blurb: "حقن وتشكيل عبوات" },
   { id: "metal", name: "معادن", blurb: "تشغيل وتشكيل معادن" },
   { id: "packaging", name: "تعبئة وتغليف", blurb: "كراتين وطباعة تغليف" },
+  { id: "leather", name: "جلود ومنتجات جلدية", blurb: "أحذية وشنط وإكسسوارات جلد" },
+  { id: "chemicals", name: "كيماويات ومنظفات", blurb: "تصنيع منظفات ومستحضرات كيميائية" },
+  { id: "paper", name: "ورق وطباعة", blurb: "طباعة دفاتر وكتالوجات ومطبوعات" },
+  { id: "glass_ceramics", name: "زجاج وسيراميك", blurb: "تشكيل زجاج وخزف وبلاط" },
+  { id: "electronics", name: "إلكترونيات وكهربائيات", blurb: "تجميع أجهزة ولوحات كهربائية" },
 ];
 
 export const SPECIALTIES = [
