@@ -32,10 +32,7 @@ function HomePage() {
     <SiteShell>
       <section className="grid items-center gap-6 md:grid-cols-[1.1fr_0.9fr]">
         <div>
-          <p className="text-sm font-bold text-accent">شبرا الخيمة · باسوس · بهتيم</p>
-          <h1 className="mt-2 text-4xl font-extrabold leading-tight md:text-5xl">
-            مصانع مصر، مصنّفة حسب قسم التصنيع.
-          </h1>
+          <h1 className="mt-2 text-4xl font-extrabold leading-tight md:text-5xl">مصانع مصر.</h1>
           <p className="mt-4 max-w-xl text-base leading-7 text-muted">
             ملابس، أثاث، أغذية، بلاستيك، معادن وتغليف. شوف القدرة اليومية والسعر، أو ابعث عرضك للمصنع.
           </p>
